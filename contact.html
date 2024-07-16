@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form
+        class="form"
+        action="https://getform.io/f/anlexqqa"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <p class="heading">Talk to us</p>
+        <input
+          type="text"
+          type="email"
+          placeholder=""
+          required
+          class="item-1"
+          id="item-1"
+        />
+        <label for="item-1" class="item-1-label" onclick="moveImage()"
+          >Work email*</label
+        >
+        <input type="text" name="email" required class="item-2" id="item-2" />
+        <label for="item-2" class="item-2-label">First name*</label>
+        <input type="text" name="text" required class="item-3" id="item-3" />
+        <label for="item-3" class="item-3-label">Last name*</label>
+        <input type="checkbox" id="fill" class="item-4" name="notify" />
+        <label for="fill" class="item-5">
+          agree to Fyle's terms and conditions, and provide consent to send me
+          communication.</label
+        >
+
+        <input type="submit" value="Contact Us" class="submit" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

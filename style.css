@@ -1,0 +1,576 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 5000px;
+}
+.container {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+.hero {
+  position: absolute;
+  top: 100px;
+  left: 1058px;
+}
+
+.hero-img {
+  width: 487px;
+  height: 737px;
+}
+
+.sub-heading {
+  position: absolute;
+  top: 243px;
+  left: 376px;
+
+  text-align: left;
+  font: normal normal 600 30px/110px Cormorant SC;
+  font-family: Cormorant;
+  letter-spacing: 0px;
+  color: #ff3147;
+  text-transform: uppercase;
+}
+
+.heading {
+  position: absolute;
+  top: 312px;
+  left: 376px;
+  width: 614px;
+  height: 140px;
+  text-align: left;
+  font: normal normal bold 50px/70px Cormorant SC;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.para {
+  position: absolute;
+  top: 502px;
+  left: 375px;
+  width: 584px;
+  height: 83px;
+  text-align: left;
+  font: normal normal normal 19px/30px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+}
+.btn {
+  position: absolute;
+  top: 645px;
+  left: 376px;
+  width: 160px;
+  height: 50px;
+  background: #ff3147 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  border: none;
+}
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.service {
+  width: 1920px;
+  height: 1030px;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.service-sub-heading {
+  position: absolute;
+  top: 100px;
+  left: 373px;
+  width: 156px;
+  height: 24px;
+  text-align: left;
+  font: normal normal 600 20px/26px Cormorant SC;
+  letter-spacing: 0px;
+  color: #ff3147;
+}
+
+.service-heading {
+  position: absolute;
+  top: 164px;
+  left: 373px;
+  width: 450px;
+  height: 110px;
+  text-align: left;
+  font: normal normal bold 45px/65px Cormorant SC;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.service-para {
+  position: absolute;
+  top: 177px;
+  left: 960px;
+  width: 550px;
+  height: 83px;
+  text-align: left;
+  font: normal normal normal 16px/30px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.slides {
+  position: absolute;
+  top: 334px;
+  left: 375px;
+  height: 526px;
+  width: 1541px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.i-1 {
+  max-width: 23%;
+}
+
+.hide-content {
+  background-color: #ff3147;
+  position: absolute;
+  top: 0;
+  width: 24%;
+  height: 100%;
+  opacity: 0;
+}
+
+.hide-content:hover {
+  opacity: 1;
+}
+
+.hide-content img {
+  position: absolute;
+  top: 116px;
+  left: 156px;
+}
+
+.hide-heading {
+  position: absolute;
+  top: 209.58px;
+  left: 64px;
+  width: 260px;
+  height: 24px;
+  text-align: center;
+  font: normal normal 600 24px/26px Cormorant SC;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.hide-sub-heading {
+  position: absolute;
+  top: 254.58px;
+  left: 25px;
+  width: 320px;
+  height: 54px;
+  text-align: center;
+  font: normal normal normal 16px/30px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.hide-btn {
+  position: absolute;
+  top: 362.5px;
+  left: 93px;
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  border: none;
+  width: 185px;
+  height: 50px;
+  font: normal normal 600 14px/26px Poppins;
+  letter-spacing: 1.4px;
+  color: #ff3147;
+}
+
+.hide-btn a {
+  text-decoration: none;
+  color: #ff3147;
+}
+
+.dots {
+  position: absolute;
+  top: 900px;
+  left: 375px;
+  display: flex;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: transparent url("img/dot.svg") 0% 0% no-repeat padding-box;
+
+  cursor: pointer;
+}
+
+.dot-1 {
+  position: absolute;
+  top: 11px;
+  left: 5px;
+}
+.dot-2 {
+  position: absolute;
+  top: 11px;
+  left: 50px;
+}
+.dot-3 {
+  position: absolute;
+  top: 11px;
+  left: 80px;
+}
+
+.dot.active {
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background: transparent url("img/redDot.svg") 0% 0% no-repeat padding-box;
+}
+
+.dot-1.active {
+  left: 0px;
+}
+.dot-2.active {
+  left: 30px;
+}
+
+.dot-3.active {
+  left: 70px;
+}
+
+.project {
+  height: 1459px;
+  width: 100%;
+  position: relative;
+}
+
+.icon-sub-heading {
+  position: relative;
+  top: 100px;
+  left: 857px;
+  width: 206px;
+  height: 24px;
+  text-align: center;
+  font: normal normal 600 24px/26px Cormorant SC;
+  letter-spacing: 0px;
+  color: #ff3147;
+}
+
+.icon-heading {
+  position: relative;
+  top: 140px;
+  left: 746px;
+  width: 428px;
+  height: 45px;
+  text-align: center;
+  font: normal normal bold 45px/65px Cormorant SC;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.icon-card {
+  margin: 0 40px;
+}
+.icon-content {
+  display: flex;
+  width: 1170px;
+  position: relative;
+  left: 375px;
+  top: 250px;
+}
+
+.icon-content img {
+  margin: 20px;
+}
+
+.icon-content .para-heading {
+  font: normal normal medium 20px/80px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+.icon-content .para-content {
+  width: 220px;
+  height: 75px;
+}
+
+.project {
+  position: relative;
+  top: 380px;
+}
+
+.project-sub-heading {
+  position: absolute;
+  left: 874px;
+  width: 172px;
+  height: 24px;
+  text-align: center;
+  font: normal normal 600 24px/26px Cormorant SC;
+  letter-spacing: 0px;
+  color: #ff3147;
+  text-transform: uppercase;
+}
+
+.project-heading {
+  position: absolute;
+  top: 50px;
+  left: 746px;
+  width: 428px;
+  height: 45px;
+  text-align: center;
+  font: normal normal bold 45px/65px Cormorant SC;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.project-card {
+  display: flex;
+  width: 1170px;
+  position: absolute;
+  top: 170px;
+  left: 375px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  width: 770px;
+  height: 567px;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.section {
+  position: relative;
+  background-color: #f6f6f6;
+  cursor: pointer;
+  height: 189px;
+  text-align: center;
+  margin-left: 30px;
+  text-align: left;
+  font: normal normal medium 20px/80px Poppins;
+  letter-spacing: 0px;
+}
+
+.section:active {
+  background-color: #ff3147;
+  color: #f4f4f4;
+}
+
+.section-heading {
+  position: relative;
+  top: 34px;
+  left: 30px;
+  width: 293px;
+  height: 28px;
+  text-align: left;
+  font-size: large;
+  letter-spacing: 0px;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.section-sub-heading {
+  position: relative;
+  top: 50px;
+  left: 30px;
+  width: 250px;
+  height: 79px;
+  text-align: left;
+  font: normal normal normal 16px/28px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.growth {
+  position: absolute;
+  top: 3650px;
+  left: -1px;
+  height: 602px;
+  width: 1900px;
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.growth-sub-heading {
+  position: absolute;
+  top: 100px;
+  left: 847px;
+  width: 226px;
+  height: 24px;
+  text-align: center;
+  font: normal normal 600 24px/26px Cormorant SC;
+  letter-spacing: 0px;
+  color: #ff3147;
+  text-transform: uppercase;
+}
+
+.growth-heading {
+  position: absolute;
+  top: 164px;
+  left: 670px;
+  width: 600px;
+  height: 45px;
+  text-align: center;
+  font: normal normal bold 45px/65px Cormorant SC;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.growth-grid {
+  height: 233px;
+  width: 1172px;
+  position: absolute;
+  left: 375px;
+  top: 269px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.growth-grid .card {
+  height: 233px;
+  width: 270px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.growth-grid .card:hover {
+  box-shadow: 3px 6px 20px #672c2c1f;
+}
+
+.card .icon img {
+  width: 39px;
+  height: 34px;
+}
+.card .number {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+.card .text {
+  font-size: 20px;
+}
+
+.feedback {
+  height: 510px;
+  width: 1920px;
+  position: relative;
+  top: 370px;
+  background-color: #ffffff;
+}
+
+.feedbak-sub-heading {
+  position: absolute;
+  top: 100px;
+  left: 839px;
+  width: 260px;
+  height: 24px;
+  text-align: center;
+  font: normal normal 600 24px/26px Cormorant SC;
+  letter-spacing: 0px;
+  color: #ff3147;
+  text-transform: uppercase;
+}
+
+.feedback-heading {
+  position: absolute;
+  top: 164px;
+  left: 661px;
+  width: 598px;
+  height: 45px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.feedback-icon {
+  position: absolute;
+  top: 260px;
+  left: 670px;
+  width: 64px;
+  height: 45px;
+}
+
+.feedback-content {
+  position: absolute;
+  top: 270px;
+  left: 690px;
+  width: 650px;
+  height: 62px;
+  text-align: left;
+  font: normal normal normal 19px/38px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.feedback-name {
+  position: absolute;
+  top: 380px;
+  left: 680px;
+  width: 159px;
+  height: 28px;
+  text-align: left;
+  font: normal normal bold 20px/34px Poppins;
+  letter-spacing: 0px;
+  color: #ff3147;
+}
+
+.feedback-occ {
+  position: absolute;
+  top: 380px;
+  left: 860px;
+  width: 380px;
+  height: 28px;
+  text-align: left;
+  font: normal normal 300 20px/34px Poppins;
+  letter-spacing: 0px;
+  color: #808080;
+}
+
+.footer {
+  position: relative;
+  top: 350px;
+  height: 310px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("img/NoPath\ -\ Copy.svg");
+}
